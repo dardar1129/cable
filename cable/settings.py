@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-64tvn)0h*)z@j3usjr45e_wv)8q9l59z6y!$)@o&*86idgle@e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -72,6 +72,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'cable.wsgi.application'
 
+STATIC_URL = 'static/'
+STATIC_ROOT = 'static/'
+# aa
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
